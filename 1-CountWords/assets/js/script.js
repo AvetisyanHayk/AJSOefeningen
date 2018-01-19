@@ -195,7 +195,7 @@ var buildNumeric = function (word) {
 
 var buildURI = function (word) {
     word = finalizeWord(word);
-    word = optimizeSpecificWord(word.replace("https://", ""));
+    word = optimizeSpecificWord(word.replace("https://", "").replace("http://", ""));
     return word.toLowerCase();
 };
 
@@ -367,11 +367,13 @@ var toggleNullRow = function () {
 };
 
 var reset = function (e) {
-    $('#result').find('.table tbody tr:not(.null)').remove();
+    $('#result').find('table tbody tr:not(.null)').remove();
     $('#clear-ignored-words-button').trigger('click');
     $('#ignored-words').empty();
     $('#text').text(TEST_TEXT);
+    $('#filter-text').val("");
     $('[data-change-on-reset="true"]').trigger("change");
+    $('#count-button').focus();
     toggleNullRow();
 };
 
