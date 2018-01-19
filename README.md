@@ -1,8 +1,8 @@
 # AJSOefeningen
 Advanced JavaScript - Oefeningen
 
-- [Oefening1: Count Words](#oefening1:-count-words)
-- [Oefening2: Pokédex](#oefening2:-pokédex)
+- [Oefening 1: Count Words](#oefening-1-count-words)
+- [Oefening 2: Pokédex](#oefening-2-pokédex)
 
 ## Oefening 1: Count Words
 
