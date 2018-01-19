@@ -4,7 +4,7 @@ Advanced JavaScript - Oefeningen
 - [Oefening 1: Count Words](#oefening-1-count-words)
 - [Oefening 2: Pokédex](#oefening-2-pokédex)
 - [Oefening 3: This and First class functions](#oefening-3-this-and-first-class-functions)
-  - [3.1: This](#3.1-this)
+  - [Oefening 3-1: This](#oefening-3-1-this)
 
 ## Oefening 1: Count Words
 
@@ -86,7 +86,7 @@ Build the following web UI, using which the Pokedex-DB can be queried and matchi
 
 ## Oefening 3: This and First class functions
 
-### 3.1 This
+### Oefening 3-1: This
 
 Given are an HTML page and the associated JavaScript file. Complete the JavaScript code so that the application allows the user to add their favorite websites to the `<ul>`. 
 
