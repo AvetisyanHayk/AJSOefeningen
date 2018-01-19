@@ -1,6 +1,9 @@
 # AJSOefeningen
 Advanced JavaScript - Oefeningen
 
+- [Oefening1: Count Words](#oefening1:-count-words)
+- [Oefening2: Pokédex](#oefening2:-pokédex)
+
 ## Oefening 1: Count Words
 
 Write a JavaScript program that counts the **frequency** of the words in a text. The word `the`, for instance, occurred three times in the last sentence. We want to know these numbers for all words in any text. We also want to be able to ignore some words in our result, because they occur very frequently and are of no interest for the content, e.g., `the`.
