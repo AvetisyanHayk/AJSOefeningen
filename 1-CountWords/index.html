@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hayk AVETISYAN"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="assets/css/screen.css"/>
+
+    <title>Count Words</title>
+</head>
+<body>
+<div class="container">
+    <form>
+        <fieldset>
+            <legend>Count Words</legend>
+            <label for="text">Text:</label>
+            <textarea id="text" rows="20" data-change-on-reset="true"></textarea>
+
+
+            <label for="ignore-text">Ignore words:</label>
+            <input type="text" id="ignore-text" placeholder="Single or Multiple"/>
+            <div class="text-right">
+                <button type="button" id="clear-ignored-words-button" class="top-margin">Clear</button>
+                <button type="button" id="ignore-button" class="top-margin" disabled="disabled">Ignore</button>
+            </div>
+            <ul>
+                <li>
+                    <input type="checkbox" id="ignore-numbers" name="ignore-filter" data-change-on-reset="true"/>
+                    <label for="ignore-numbers"> Ignore Numbers</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="ignore-uri" data-change-on-reset="true" name="ignore-filter"/>
+                    <label for="ignore-uri"> Ignore URI</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="ignore-single" name="ignore-filter" data-change-on-reset="true"
+                           checked="checked"/>
+                    <label for="ignore-single"> Ignore Single Characters</label>
+                </li>
+            </ul>
+            <label class="title-label">Ignored words:</label>
+            <ul id="ignored-words"></ul>
+            <div class="text-right">
+                <button type="reset" id="reset-button" class="top-margin">Reset</button>
+                <button type="button" id="count-button" class="top-margin">Count</button>
+            </div>
+        </fieldset>
+
+    </form>
+    <div id="result">
+        <form>
+            <fieldset>
+                <legend>Filter</legend>
+                <label for="filter-text">Filter text:</label>
+                <input type="text" id="filter-text"/>
+            </fieldset>
+        </form>
+        <table>
+            <thead>
+            <tr>
+                <th>Word</th>
+                <th>Count</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="null">
+                <td colspan="2">Nothing to show!</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

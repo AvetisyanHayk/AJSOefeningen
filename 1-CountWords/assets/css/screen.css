@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+body {
+    font-family: "Titillium Web", "Arial", sans-serif;
+    font-size: 1rem;
+    line-height: 130%
+}
+
+input[type=checkbox] {
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.title-label {
+    display: block;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 6px 8px;
+    width: 100%
+}
+
+label + textarea,
+label + input[type=text] {
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    padding: 4px 8px;
+}
+
+.container {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+fieldset {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.5rem
+}
+
+button {
+    padding: 6px 12px
+}
+
+.top-margin {
+    margin-top: 6px
+}
+
+.text-right {
+    text-align: right;
+}
+
+#result table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+#result table thead tr {
+    background-color: #aaa
+}
+
+#result table thead tr th {
+    padding: 8px 6px;
+    text-transform: uppercase;
+}
+
+#result table thead tr th:first-child {
+    text-align: left;
+}
+
+#result table thead tr th:nth-child(2) {
+    text-align: right;
+}
+
+#result table thead td th:first-child {
+    text-align: left;
+}
+
+#result table tbody tr.null td {
+    cursor: default;
+    padding: 8px 6px;
+    text-align: center;
+}
+
+#result table tbody tr:hover {
+    background-color: #ccc
+}
+
+#result table tbody tr td {
+    padding: 6px;
+}
+
+#result table tbody tr td:nth-child(2) {
+    text-align: right;
+}
