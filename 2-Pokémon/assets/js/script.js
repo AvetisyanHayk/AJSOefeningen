@@ -93,7 +93,7 @@ var fillTypes = function (types) {
     var selected = $types.find('option:selected').text();
     var $items = types.map(textToOption);
     $types.empty().append($items);
-    if (selected) {
+    if (selected && types.indexOf(selected) >= 0) {
         $types.val(selected);
     }
 };
@@ -120,7 +120,7 @@ var fillPokemons = function (pokemons) {
     var $items = pokemons.map(pokemonToOption);
     var selected = $pokeMatch.find('option:selected').val();
     $pokeMatch.empty().append($items);
-    if (selected) {
+    if (selected && pokemons.indexOf(selected) >= 0) {
         $pokeMatch.find('option[value="' + selected + '"]').attr("selected", selected);
     }
     $('input[type="submit"]').prop("disabled", $items === undefined || $items.length === 0);
