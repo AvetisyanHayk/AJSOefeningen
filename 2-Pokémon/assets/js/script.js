@@ -116,8 +116,13 @@ var updatePokemons = function (e) {
 };
 
 var fillPokemons = function (pokemons) {
+    var $pokeMatch = $('#pokeMatch');
     var $items = pokemons.map(pokemonToOption);
-    $('#pokeMatch').empty().append($items);
+    var selected = $pokeMatch.find('option:selected').val();
+    $pokeMatch.empty().append($items);
+    if (selected) {
+        $pokeMatch.find('option[value="' + selected + '"]').attr("selected", selected);
+    }
     $('input[type="submit"]').prop("disabled", $items === undefined || $items.length === 0);
 };
 
