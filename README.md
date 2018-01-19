@@ -4,7 +4,7 @@ Advanced JavaScript - Oefeningen
 - [Oefening 1: Count Words](#oefening-1-count-words)
 - [Oefening 2: Pokédex](#oefening-2-pokédex)
 - [Oefening 3: This and First class functions](#oefening-3-this-and-first-class-functions)
-  - [Oefening 3-1: This](#oefening-3-1-this)
+  - [Oefening 3-1: Favorites](#oefening-3-1-favorites)
 
 ## Oefening 1: Count Words
 
@@ -86,7 +86,7 @@ Build the following web UI, using which the Pokedex-DB can be queried and matchi
 
 ## Oefening 3: This and First class functions
 
-### Oefening 3-1: This
+### Oefening 3-1: Favorites
 
 Given are an HTML page and the associated JavaScript file. Complete the JavaScript code so that the application allows the user to add their favorite websites to the `<ul>`. 
 
@@ -97,3 +97,9 @@ Given are an HTML page and the associated JavaScript file. Complete the JavaScri
 - `addUrl`: do not modify this function
 - when document is ready: add the right calls to `app.addUrl` here so http://www.howest.be and http://www.google.be are added to the list upon launch
 
+
+### Oefening 3-2: Fibonacci
+
+Write a JavaScript program to calculate the *n*<sup>th</sup> number in the **Fibonacci** sequence. Develop a recursive function `fib` to achieve this.
+
+***Challenge:*** What is the largest number you can compute in under 1 minute?
