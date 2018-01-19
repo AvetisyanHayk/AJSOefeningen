@@ -57,19 +57,22 @@ Build the following web UI, using which the Pokedex-DB can be queried and matchi
 
 - Before you can enable the filters, you'll need predicate functions that can check both the size and type of a Pokémon. A predicate is just a function that returns a `boolean` (No magic, "predicate" just a name).
 
-  `var isAny = function(pokemon) {`
-  ​	`return true;`
-  `}`
+  ```
+  var isAny = function(pokemon) {
+      return true;
+  }
+  ```
 
 - Write the predicates `isSmall`, `isMedium` and `isLarge` to check whether a Pokémon is less than a meter tall (**small**), taller than 2 meters (**large**) or somewhere in between (**medium**).
 
 - ~~Now, also write a function `makeTypePredicate` which returns a predicate that determines whether a certain Pokémon belongs to a given type. The following pseudo code might be of assistance:~~
 
-  ~~`var isGrass = makeTypePredicate("grass");`~~
-  ~~`if (isGrass(pokemon)) {`~~
-  ​	~~`console.log(pokemon.name + " is a grass Pokémon.");`~~
-  ~~`}`~~
-  ~~`else {`~~
-  ​	`console.log(pokemon.name + " isn't a grass Pokémon.");`
-  ~~`}`~~
+  ```
+  var isGrass = makeTypePredicate("grass");
+  if (isGrass(pokemon)) {
+      console.log(pokemon.name + " is a grass Pokémon.");
+  } else {
+      console.log(pokemon.name + " isn't a grass Pokémon.");
+  }
+  ```
 
