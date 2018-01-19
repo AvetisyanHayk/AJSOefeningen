@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hayk AVETISYAN"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/screen.css"/>
+
+    <title>Pokémon: Gotta catch 'em all</title>
+</head>
+<body>
+
+<header>
+    <h1>Choose your Pokémon to catch!</h1>
+    <img src="assets/media/logo.png" />
+</header>
+
+<main>
+    <h2>Apply your filter criteria</h2>
+    <form id="pokeForm">
+        <label for="pokeSize">Filter by size:</label>
+        <select id="pokeSize">
+            <option>isAny</option>
+            <option>isSmall</option>
+            <option>isMedium</option>
+            <option>isLarge</option>
+        </select>
+        <label for="pokeType">Filter by type:</label>
+        <select id="pokeType"></select>
+        <label for="pokeMatch">Matching Pokémon:</label>
+        <select id="pokeMatch"></select>
+        <input type="submit" value="Catch!" />
+    </form>
+
+    <h2>Caught Pokémon:</h2>
+
+    <ul id="pokeCatch"><li>none</li></ul>
+</main>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/pokedex.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
