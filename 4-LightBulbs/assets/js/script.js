@@ -11,6 +11,10 @@ var toggleSwitchActive = function (e) {
 
 var toggleSwitch = function (e) {
     var $circuit = $(this).closest('.circuit');
+    if ($circuit.attr("data-static") === "true") {
+        alert("What the hell are you doing?");
+        return;
+    }
     var $device = $circuit.find('.device').find('i');
     var newState = getNewState($circuit);
     $circuit.attr("data-state", newState);
@@ -29,9 +33,12 @@ var getNewState = function ($circuit) {
     return (newState === "on") ? "off" : "on";
 };
 
-var buildCircuit = function (deviceCount, switchCount, defaultEnabled, icon) {
+var buildCircuit = function (deviceCount, switchCount, defaultEnabled, icon, preventDefault) {
     var state = (defaultEnabled) ? "on" : "off";
     var $circuit = $('<div class="circuit">').attr("data-state", state);
+    if (preventDefault) {
+        $circuit.attr("data-static", "true");
+    }
     var $device = buildDevice(deviceCount, defaultEnabled, icon);
     var $switches = buildSwitches(switchCount, defaultEnabled);
     $circuit.append($device).append($switches);
@@ -69,7 +76,7 @@ var init = function () {
         .on("click", '.switches a', toggleSwitch);
     buildCircuit(3, 5, false);
     buildCircuit(2, 4, false, "fa-soccer-ball-o");
-    buildCircuit(1, 3, true, "fa-globe");
+    buildCircuit(1, 3, true, "fa-globe", true);
 };
 
 $(document).ready(init);
