@@ -121,3 +121,6 @@ myLog.log("Hello world!"); // Hello world! appears on the console
 // and in the div with id "console" as well
 ```
 
+### Oefening 4: Just for fun
+
+An alternative to switch-bulbs exercise.

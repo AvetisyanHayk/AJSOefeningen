@@ -1,0 +1,75 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    line-height: 130%;
+    margin: 0;
+}
+
+.container {
+    margin-top: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.switches {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switches li {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 14%;
+    min-width: 110px;
+}
+
+.switches li a {
+    display: block;
+}
+
+.switches li a img {
+    width: 100%;
+    height: auto;
+}
+
+.circuit {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    text-align: center;
+    background-image: url('../media/niko-logo.svg');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 10px bottom;
+}
+
+.device {
+    text-align: center;
+}
+
+.device i {
+    font-size: 5rem;
+}
+
+.device i:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1224px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    .container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
