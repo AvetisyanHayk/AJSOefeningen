@@ -100,6 +100,6 @@ Given are an HTML page and the associated JavaScript file. Complete the JavaScri
 
 ### Oefening 3-2: Fibonacci
 
-Write a JavaScript program to calculate the *n*<sup>th</sup> number in the **Fibonacci** sequence. Develop a recursive function `fib` to achieve this.
+Write a JavaScript program to calculate the *n*<sup>th</sup> number in the **Fibonacci** sequence. ~~Develop a recursive function `fib` to achieve this.~~
 
 ***Challenge:*** What is the largest number you can compute in under 1 minute?
