@@ -5,6 +5,8 @@ Advanced JavaScript - Oefeningen
 - [Oefening 2: Pokédex](#oefening-2-pokédex)
 - [Oefening 3: This and First class functions](#oefening-3-this-and-first-class-functions)
   - [Oefening 3-1: Favorites](#oefening-3-1-favorites)
+  - [Oefening 3-2: Fibonacci](#oefening-3-2-fibonacci)
+  - [Oefening 3-3: Console-Wrapper](#oefening-3-3-console-wrapper)
 
 ## Oefening 1: Count Words
 
@@ -103,3 +105,19 @@ Given are an HTML page and the associated JavaScript file. Complete the JavaScri
 Write a JavaScript program to calculate the *n*<sup>th</sup> number in the **Fibonacci** sequence. ~~Develop a recursive function `fib` to achieve this.~~
 
 ***Challenge:*** What is the largest number you can compute in under 1 minute?
+
+### Oefening 3-3: Console-Wrapper
+
+Write a "wrapper" for `console.log` that:
+
+1. Still outputs to the console
+2. But also adds the text to a `<div>` (e.g. `id="console"`) on a webpage.
+
+For example:
+
+```
+var myLog = makeMyLog(console.log, "console");
+myLog.log("Hello world!"); // Hello world! appears on the console
+// and in the div with id "console" as well
+```
+
