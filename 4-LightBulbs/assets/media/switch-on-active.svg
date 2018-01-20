@@ -8,7 +8,7 @@ viewBox="0 0 799 799"
   <style type="text/css">
    <![CDATA[
     .fil3 {fill:black}
-    .fil4 {fill:#0895D1}
+    .fil4 {fill:#1761D1}
     .fil1 {fill:#1F1F1F;fill-rule:nonzero}
     .fil2 {fill:url(#id0)}
     .fil0 {fill:url(#id1)}
@@ -32,6 +32,6 @@ viewBox="0 0 799 799"
   <rect class="fil2" x="190" y="190" width="419" height="419"/>
   <path class="fil1" d="M190 186l423 0 0 427 -427 0 0 -427 4 0zm416 7l-413 0 0 413 413 0 0 -413z"/>
   <polygon class="fil3" points="606,593 193,593 193,606 606,606 "/>
-  <rect class="fil4" x="268" y="521" width="9.31947" height="45.1381"/>
+  <rect class="fil4" x="265" y="521" width="14.8953" height="45.1381"/>
  </g>
 </svg>
