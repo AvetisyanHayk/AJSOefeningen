@@ -23,7 +23,8 @@ function Gender(type) {
     this.getName = function () {
         if (this.type === "M") {
             return "male"
-        } else if (this.type === "F") {
+        }
+        if (this.type === "F") {
             return "female"
         }
     };
@@ -31,7 +32,9 @@ function Gender(type) {
         if (this.type === "M") {
             return "Mr."
         }
-        return "Ms."
+        if (this.type === "F") {
+            return "Ms."
+        }
     };
 }
 
