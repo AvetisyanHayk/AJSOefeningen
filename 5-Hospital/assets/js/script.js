@@ -117,17 +117,6 @@ var fillDoctors = function () {
     });
 };
 
-
-var buildDoctor = function (doctor) {
-    var $doctor = $('<article draggable="true">').attr("id", doctor.getId());
-    var $personIcon = $('<div class="doctor">').css("background-position", ICON_MANAGER.person(doctor.getIcon()));
-    var $personName = $('<h3>').html($('<small>').text(doctor.title)).append(" " + doctor.name);
-    var $symptom = $('<div class="wide">').append($('<div class="specialty">')
-        .css("background-position", ICON_MANAGER.organ(doctor.getOrganIcon())));
-    var $description = $('<div class="description">').text(doctor.getSpecialtyName());
-    return $doctor.append($personIcon).append($personName).append($symptom).append($description);
-};
-
 var initDragAndDrop = function () {
     $('.droppable')
         .on("dragover", allowDrop)
