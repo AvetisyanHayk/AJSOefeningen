@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Hayk AVETISYAN"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" href="assets/3pty/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/screen.css"/>
+
+    <title>The Hospital</title>
+</head>
+<body>
+
+<header>
+    <h1 class="logo">
+        <img alt="HOWEST Hospital" src="assets/media/howest-hospital.svg"/>
+    </h1>
+
+    <section class="patients draggable-container">
+        <h2><i class="fa fa-fw fa-address-card"></i> Patient queue</h2>
+    </section>
+
+</header>
+
+<div class="container">
+    <main>
+        <figure id="hospital" class="droppable">
+            <img src="assets/media/hospital.svg" alt="HOWEST HOSPITAL" title="HOWEST HOSPITAL"/>
+            <figcaption class="text-center">
+                <span class="caption"><strong>HOWEST HOSPITAL</strong></span>
+                <span class="caption-footer alert-info"><em><i class="fa fa-fw fa-info-circle"></i> drag patients or doctors onto the hospital</em></span>
+            </figcaption>
+        </figure>
+    </main>
+</div>
+
+<footer>
+    <section class="doctors draggable-container">
+        <h2><i class="fa fa-fw fa-heartbeat"></i> Doctor Pool</h2>
+    </section>
+</footer>
+
+<div class="modal fade" id="patient-modal" tabindex="-1" role="dialog" aria-labelledby="PatientInformation" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="PatientInformation"><i class="fa fa-fw fa-hospital-o"></i> Patient: <span class="name"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong class="name"></strong> is admitted in the hospital with <em class="description"></em>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="doctor-modal" tabindex="-1" role="dialog" aria-labelledby="DoctorInformation" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="DoctorInformation"><i class="fa fa-fw fa-hospital-o"></i> <span class="name"></span></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <strong class="name"></strong> works at the hospital as <em class="description"></em>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/3pty/bootstrap/tether.min.js"></script>
+<script src="assets/3pty/bootstrap/bootstrap.min.js"></script>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

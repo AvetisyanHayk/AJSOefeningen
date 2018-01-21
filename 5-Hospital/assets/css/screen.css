@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600,600i');
+
+/*
+   RESET CSS
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+/*
+    Custom CSS
+ */
+
+body {
+    background-image: url("../media/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 130%;
+}
+
+header {
+    display: flex;
+    align-items: flex-start;
+    /*margin-top: 60px;*/
+    padding: 10px;
+    background-color: rgba(186, 198, 199, 0.9);
+    position: relative
+}
+
+main {
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+footer {
+    background-color: rgba(236, 15, 15, 0.9);
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fira Sans", sans-serif;
+}
+
+figcaption .caption {
+    display: block;
+}
+
+figcaption .caption-footer {
+    display: block;
+    padding: 6px;
+    margin-top: 4px;
+}
+
+h1.logo {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 4px 12px;
+    border-radius: 5px;
+    width: 72px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#hospital {
+    width: 240px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+}
+
+
+#hospital.dropme {
+    background-color: rgba(49,176,213,.4);
+    transition: background-color .3s ease;
+}
+
+section.draggable-container {
+    display: inline-block;
+}
+
+section.draggable-container.patients {
+    padding-left: 10px;
+    border-left: 1px solid #fff;
+}
+
+section.draggable-container h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 150%
+}
+footer section.draggable-container h2 {
+    color: #fff;
+}
+
+section.draggable-container article {
+    display: inline-block;
+    padding: 20px 5px 5px 5px;
+    border-radius: 3px;
+    margin-top: 25px;
+    position: relative;
+    transition: background-color .3s ease;
+}
+section.draggable-container.patients article {
+    background-color: rgba(255,255,255,.4);
+}
+section.draggable-container.doctors article {
+    background-color: rgba(255,255,255,.8);
+}
+
+section.draggable-container.patients article:hover {
+    background-color: rgba(49,176,213,.4);
+    transition: background-color .3s ease;
+}
+section.draggable-container.doctors article:hover {
+    background-color: rgba(255, 251, 163, 0.6);
+    transition: background-color .3s ease;
+}
+
+section.draggable-container article:not(:last-of-type) {
+    margin-right: 6px;
+}
+
+section.draggable-container article h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+section.draggable-container article h3 small {
+    margin-right: 3px;
+    color: #31708f;
+}
+
+article .patient,
+article .doctor {
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background-size: 418.8px 315px; /* 60% of the original */
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    background-image: url('../media/icons-persons.png');
+    background-repeat: no-repeat;
+    width: 36.95px;
+    height: 36.95px;
+    margin-right: 6px;
+}
+
+article .patient.child-male {
+    background-position: -237px -6px;
+}
+
+section.draggable-container .wide {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+article .specialty {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../media/icons-organs.png');
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+article .specialty.dental {
+    background-position: -237px -6px;
+}
+
+article .description {
+    font-style: italic;
+    font-size: .9375rem;
+    margin-top: 6px;
+    text-align: center;
+}
