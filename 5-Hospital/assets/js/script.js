@@ -1,6 +1,6 @@
 var ICON_MANAGER = createIconManager(
-    {pct: 60, tight: true, originalWidth: 698}, // Person Icon Map parameters
-    {tight: true, originalWidth: 698} // Organ Icon Map Parameters
+    {pct: 60, tight: true, originalWidth: 698, side: 75}, // Person Icon Map parameters
+    {tight: true, originalWidth: 698, side: 75} // Organ Icon Map Parameters
 );
 
 function Condition(data) {

@@ -18,9 +18,9 @@ function createIconManager(personParams, organParams) {
         ["receptionist", "oldPatientFemale", "oldPatientMale", "doctorMouthProtectionBlue", "doctorMouthProtectionGreen", "patient2Female", "patient2Male", "kidneyDoctor", "animalDoctor"]
     ];
 
-    function IconMapProperties(iconMap, side, params) {
+    function IconMapProperties(iconMap, params) {
         this.iconMap = iconMap;
-        this.side = side;
+        this.side = params.side;
         this.tight = params.tight;
         this.factor = (params.pct) ? params.pct / 100 : 1;
         this.width = params.originalWidth;
@@ -68,8 +68,8 @@ function createIconManager(personParams, organParams) {
         }
     }
 
-    var personIconMapProperties = new IconMapProperties(personIconMap, 75, personParams);
-    var organIconMapProperties = new IconMapProperties(organIconMap, 75, organParams);
+    var personIconMapProperties = new IconMapProperties(personIconMap, personParams);
+    var organIconMapProperties = new IconMapProperties(organIconMap, organParams);
 
     return {
         person: function (icon) {
